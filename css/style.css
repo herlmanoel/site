@@ -1,0 +1,180 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+    /* font-family: 'EB Garamond', serif; */
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.menu{ 
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+header ul {
+    /* deixar os lis um do lado do outro */
+    display: flex;
+    justify-content: right;
+    width: 80vw;
+}
+
+header ul li {
+    list-style: none;
+    padding-left: 18px;
+}
+
+nav a {
+    /* aumentando a área de click */
+    display: block;
+    padding: 10px;
+
+    text-decoration: none;
+    color: black;
+}
+
+
+.div-sub-title {
+    
+}
+
+.sub-title {
+    font-style: normal;
+    display: block;
+    /* cursor */
+    border-right: 2px solid rgba(42, 39, 39, 0.75);
+
+    color: #EC615B;
+    font-size: 10px;
+    margin-left: 3.5vw;
+
+    /* não quero que quebre linha */
+    white-space: nowrap;
+
+    /* esconder */
+    overflow: hidden;
+}
+
+.typing-animation {
+    /*  steps(40) quebrando quadro a quadro*/
+    animation: linkCursor 500ms steps(50) infinite normal, typing 1.8s steps(50) 1s normal both;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 10.8em;
+    }
+}
+@media (min-width: 400px) {
+    .sub-title {
+        font-size: 0.6em;
+    }
+}
+@media (min-width: 600px) {
+    .sub-title {
+        font-size: 0.7em;
+    }
+}
+@media (min-width: 800px) {
+    .sub-title {
+        font-size: 1em;
+    }
+}
+@media (min-width: 1000px) {
+    .sub-title {
+        font-size: 1.2em;
+    }
+}
+@media (min-width: 1100px) {
+    .sub-title {
+        font-size: 1.5em;
+    }
+}
+
+
+/* animações */
+@keyframes linkCursor{
+    from  {
+        border-right: 2px solid rgba(70, 67, 67, 0.75);
+    }
+    to {
+        border-right:transparent;
+    }
+}
+
+.fa-house-user{
+    color: #EC615B;
+}
+
+.conteudo-header{
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    justify-content: center;
+    height: 90vh;
+}
+
+.conteudo-header .colunaUm, .colunaDois {
+    display: grid;
+    /* alinha verticalmente */
+    align-items: center;
+}
+
+
+
+.colunaUm {
+    justify-items: center;
+}
+
+.colunaUm .imagem-topo,
+.colunaDois .imagem-topo {
+    width: 40vw;
+    height: auto;
+
+    max-width: 1200px;
+} 
+.contato {
+    height: 100vh;
+
+    /* centralizando */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.areaForm {
+    /* background: linear-gradient(white,rgba(90, 138, 156, 0.75), rgba(195, 64, 86, 0.733)); */
+    width: 60vw;
+    height: 70vh;
+    display: grid;
+    justify-items: center;
+}
+.img-perfil {
+    height: 40vh;
+    width: auto;
+    border-radius: 50%;
+}
+.img-herlmanoel-fernandes {
+    
+    height: auto;
+    width: 29vw;
+}
+.bio-sobre {
+    text-align: center;
+    width: 29vw;
+}
+
+.redes-sociais i {
+    color: #EC615B;
+    font-size: 1.5em;
+    padding: 10px;
+}
