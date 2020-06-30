@@ -41,10 +41,6 @@ nav a {
 }
 
 
-.div-sub-title {
-    
-}
-
 .sub-title {
     font-style: normal;
     display: block;
@@ -173,8 +169,19 @@ nav a {
     width: 29vw;
 }
 
+a {
+    text-decoration:none; 
+}
+.redes-sociais {
+    margin-top: 5vh;
+    margin-left: 3.5vw;
+    align-self: center;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .redes-sociais i {
     color: #EC615B;
-    font-size: 1.5em;
-    padding: 10px;
+    font-size: 1.5em;    
 }
